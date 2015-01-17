@@ -38,6 +38,7 @@
     else{
         PFUser *newUser = [PFUser user];
         newUser.email = email;
+        newUser.username = email;
         newUser.password = password;
         newUser[@"firstName"] = firstName;
         newUser[@"lastName"] = lastName;
