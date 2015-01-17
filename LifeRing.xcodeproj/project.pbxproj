@@ -43,6 +43,27 @@
 			remoteGlobalIDString = 4C2C146A1A69F3F800123EDD;
 			remoteInfo = LifeRing;
 		};
+		D2FEA2081A6AEE120017FA4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C2C14631A69F3F800123EDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C2C146A1A69F3F800123EDD;
+			remoteInfo = LifeRing;
+		};
+		D2FEA20A1A6AEE1B0017FA4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C2C14631A69F3F800123EDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C2C146A1A69F3F800123EDD;
+			remoteInfo = LifeRing;
+		};
+		D2FEA20C1A6AEE1B0017FA4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C2C14631A69F3F800123EDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C2C146A1A69F3F800123EDD;
+			remoteInfo = LifeRing;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +278,9 @@
 			);
 			dependencies = (
 				4C2C14891A69F3F800123EDD /* PBXTargetDependency */,
+				D2FEA2091A6AEE120017FA4B /* PBXTargetDependency */,
+				D2FEA20B1A6AEE1B0017FA4B /* PBXTargetDependency */,
+				D2FEA20D1A6AEE1B0017FA4B /* PBXTargetDependency */,
 			);
 			name = LifeRingTests;
 			productName = LifeRingTests;
@@ -354,6 +378,21 @@
 			isa = PBXTargetDependency;
 			target = 4C2C146A1A69F3F800123EDD /* LifeRing */;
 			targetProxy = 4C2C14881A69F3F800123EDD /* PBXContainerItemProxy */;
+		};
+		D2FEA2091A6AEE120017FA4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C2C146A1A69F3F800123EDD /* LifeRing */;
+			targetProxy = D2FEA2081A6AEE120017FA4B /* PBXContainerItemProxy */;
+		};
+		D2FEA20B1A6AEE1B0017FA4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C2C146A1A69F3F800123EDD /* LifeRing */;
+			targetProxy = D2FEA20A1A6AEE1B0017FA4B /* PBXContainerItemProxy */;
+		};
+		D2FEA20D1A6AEE1B0017FA4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C2C146A1A69F3F800123EDD /* LifeRing */;
+			targetProxy = D2FEA20C1A6AEE1B0017FA4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -492,7 +531,7 @@
 		4C2C14951A69F3F800123EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -502,24 +541,26 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = LifeRingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
 		4C2C14961A69F3F800123EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = LifeRingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
