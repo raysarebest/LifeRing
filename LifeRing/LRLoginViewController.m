@@ -7,9 +7,22 @@
 //
 
 #import "LRLoginViewController.h"
-
+#import <Parse/Parse.h>
 @implementation LRLoginViewController
 //Okay, bitches, it's time to fuck shit up
--(IBAction)logIn{
+
+
+
+-(IBAction)logIn{NSString *email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+NSString *password = [self.passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+//parse shit here//
+[PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
+    
+}];
+
 }
+
+  
+  
 @end
