@@ -365,7 +365,7 @@
                                             <constraint firstAttribute="height" constant="186" id="q4E-Oy-01C"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Cell" textLabel="uwh-qw-ogo" style="IBUITableViewCellStyleDefault" id="Efw-yf-VJF">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="Cell" textLabel="uwh-qw-ogo" style="IBUITableViewCellStyleDefault" id="Efw-yf-VJF">
                                                 <rect key="frame" x="0.0" y="0.0" width="305" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Efw-yf-VJF" id="2qc-JR-QEB">
