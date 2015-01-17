@@ -31,7 +31,7 @@
 		4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C01A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m */; };
 		4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */; };
-		4CD9C8D41A6A5AE9009BEF1A /* LRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */; };
+		4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */; };
 		4CD9C8D71A6A5C1A009BEF1A /* LRAilmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -80,8 +80,8 @@
 		4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLoginViewController.h; sourceTree = "<group>"; };
 		4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLoginViewController.m; sourceTree = "<group>"; };
-		4CD9C8D21A6A5AE9009BEF1A /* LRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRSignUpViewController.h; sourceTree = "<group>"; };
-		4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSignUpViewController.m; sourceTree = "<group>"; };
+		4CBFAA041A6AAB4E003C2F65 /* LRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRSignUpViewController.h; sourceTree = "<group>"; };
+		4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSignUpViewController.m; sourceTree = "<group>"; };
 		4CD9C8D51A6A5C1A009BEF1A /* LRAilmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAilmentTableViewCell.h; sourceTree = "<group>"; };
 		4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAilmentTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,10 +211,10 @@
 		4C2C14C51A6A089500123EDD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CBFAA041A6AAB4E003C2F65 /* LRSignUpViewController.h */,
+				4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */,
 				4CD9C8D51A6A5C1A009BEF1A /* LRAilmentTableViewCell.h */,
 				4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */,
-				4CD9C8D21A6A5AE9009BEF1A /* LRSignUpViewController.h */,
-				4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */,
 				4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */,
 				4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */,
 				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
@@ -334,7 +334,7 @@
 				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
 				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
-				4CD9C8D41A6A5AE9009BEF1A /* LRSignUpViewController.m in Sources */,
+				4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */,
 				4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeRing",
@@ -466,6 +467,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -474,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeRing",
@@ -482,6 +485,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

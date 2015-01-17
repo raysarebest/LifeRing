@@ -7,6 +7,13 @@
 //
 
 @import UIKit;
-@interface LRSignUpViewController : UIViewController
 
+@interface LRSignUpViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *firstNameField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameField;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
+@property (weak, nonatomic) IBOutlet UITableView *problemsTableView;
+-(IBAction)signUp;
 @end
