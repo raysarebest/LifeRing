@@ -28,6 +28,9 @@
 		4C2C14BB1A69F99E00123EDD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C14B51A69F97F00123EDD /* SystemConfiguration.framework */; };
 		4C2C14BC1A69F9A000123EDD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C14B71A69F98600123EDD /* libz.dylib */; };
 		4C2C14BD1A69F9A200123EDD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C14B91A69F98D00123EDD /* libsqlite3.dylib */; };
+		4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C01A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m */; };
+		4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,12 @@
 		4C2C14B51A69F97F00123EDD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4C2C14B71A69F98600123EDD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4C2C14B91A69F98D00123EDD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4C2C14BF1A6A04F100123EDD /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		4C2C14C01A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		4C2C14C21A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLoginViewController.h; sourceTree = "<group>"; };
+		4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +132,9 @@
 		4C2C146D1A69F3F800123EDD /* LifeRing */ = {
 			isa = PBXGroup;
 			children = (
+				4C2C14C51A6A089500123EDD /* View Controllers */,
 				4C2C14721A69F3F800123EDD /* LRAppDelegate.h */,
 				4C2C14731A69F3F800123EDD /* LRAppDelegate.m */,
-				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
-				4C2C14761A69F3F800123EDD /* LRFirstViewController.m */,
-				4C2C14781A69F3F800123EDD /* LRSecondViewController.h */,
-				4C2C14791A69F3F800123EDD /* LRSecondViewController.m */,
 				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
 				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
 				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
@@ -167,6 +173,7 @@
 		4C2C14991A69F45300123EDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C2C14BE1A6A043B00123EDD /* TPKeyboardAvoiding */,
 				4C2C14B91A69F98D00123EDD /* libsqlite3.dylib */,
 				4C2C14B71A69F98600123EDD /* libz.dylib */,
 				4C2C14B51A69F97F00123EDD /* SystemConfiguration.framework */,
@@ -182,6 +189,30 @@
 				4C2C14971A69F44B00123EDD /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C2C14BE1A6A043B00123EDD /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C14C21A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				4C2C14BF1A6A04F100123EDD /* TPKeyboardAvoidingScrollView.h */,
+				4C2C14C01A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m */,
+			);
+			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		4C2C14C51A6A089500123EDD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */,
+				4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */,
+				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
+				4C2C14761A69F3F800123EDD /* LRFirstViewController.m */,
+				4C2C14781A69F3F800123EDD /* LRSecondViewController.h */,
+				4C2C14791A69F3F800123EDD /* LRSecondViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2C147A1A69F3F800123EDD /* LRSecondViewController.m in Sources */,
+				4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */,
 				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
 				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
+				4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
