@@ -7,9 +7,6 @@
 //
 
 @import UIKit;
-
+@import Parse;
 @interface LRFirstViewController : UIViewController
-
-
 @end
-
