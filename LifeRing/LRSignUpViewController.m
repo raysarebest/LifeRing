@@ -23,12 +23,12 @@
     NSString *confirmPassword = self.confirmPasswordField.text;
     NSNumber *age = [NSNumber numberWithInt:[self.ageField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].intValue];
 
-    if ([email length] == 0 || [password length] == 0) {
+    if (email.length == 0 || password.length == 0) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error" message:@"You must enter your email address & password" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
-    }else if(password != confirmPassword){
+    }else if(![password isEqualToString:confirmPassword]){
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password does not match" message:@"Please ensure that your passwords match" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
