@@ -28,6 +28,15 @@
         PFUser *newUser = [PFUser user];
         newUser.email = email;
         newUser.password = password;
+        
+        [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if(error){
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry!" message:@"Error." preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                    [alert addAction:ok];
+                    [self presentViewController:alert animated:YES completion:nil];
+            };
+        }];
     }
 }
 
