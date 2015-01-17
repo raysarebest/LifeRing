@@ -31,6 +31,8 @@
 		4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C01A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m */; };
 		4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */; };
+		4CD9C8D41A6A5AE9009BEF1A /* LRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */; };
+		4CD9C8D71A6A5C1A009BEF1A /* LRAilmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLoginViewController.h; sourceTree = "<group>"; };
 		4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLoginViewController.m; sourceTree = "<group>"; };
+		4CD9C8D21A6A5AE9009BEF1A /* LRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRSignUpViewController.h; sourceTree = "<group>"; };
+		4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSignUpViewController.m; sourceTree = "<group>"; };
+		4CD9C8D51A6A5C1A009BEF1A /* LRAilmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAilmentTableViewCell.h; sourceTree = "<group>"; };
+		4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAilmentTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +211,10 @@
 		4C2C14C51A6A089500123EDD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CD9C8D51A6A5C1A009BEF1A /* LRAilmentTableViewCell.h */,
+				4CD9C8D61A6A5C1A009BEF1A /* LRAilmentTableViewCell.m */,
+				4CD9C8D21A6A5AE9009BEF1A /* LRSignUpViewController.h */,
+				4CD9C8D31A6A5AE9009BEF1A /* LRSignUpViewController.m */,
 				4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */,
 				4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */,
 				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
@@ -317,12 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9C8D71A6A5C1A009BEF1A /* LRAilmentTableViewCell.m in Sources */,
 				4C2C147A1A69F3F800123EDD /* LRSecondViewController.m in Sources */,
 				4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */,
 				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
 				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
+				4CD9C8D41A6A5AE9009BEF1A /* LRSignUpViewController.m in Sources */,
 				4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

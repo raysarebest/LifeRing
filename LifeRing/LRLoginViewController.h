@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
-
 @interface LRLoginViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+-(IBAction)logIn;
 @end

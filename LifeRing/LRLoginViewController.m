@@ -10,4 +10,6 @@
 
 @implementation LRLoginViewController
 //Okay, bitches, it's time to fuck shit up
+-(IBAction)logIn{
+}
 @end
