@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
+@property (weak, nonatomic) IBOutlet UITextField *ageField;
 @property (weak, nonatomic) IBOutlet UITableView *problemsTableView;
 -(IBAction)signUp;
 @end
