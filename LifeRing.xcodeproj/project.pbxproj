@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4C2C14711A69F3F800123EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14701A69F3F800123EDD /* main.m */; };
-		4C2C14741A69F3F800123EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* AppDelegate.m */; };
-		4C2C14771A69F3F800123EDD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* FirstViewController.m */; };
-		4C2C147A1A69F3F800123EDD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14791A69F3F800123EDD /* SecondViewController.m */; };
+		4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* LRAppDelegate.m */; };
+		4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* LRFirstViewController.m */; };
+		4C2C147A1A69F3F800123EDD /* LRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14791A69F3F800123EDD /* LRSecondViewController.m */; };
 		4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147B1A69F3F800123EDD /* Main.storyboard */; };
 		4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147E1A69F3F800123EDD /* Images.xcassets */; };
 		4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C14801A69F3F800123EDD /* LaunchScreen.xib */; };
 		4C2C148E1A69F3F800123EDD /* LifeRingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C148D1A69F3F800123EDD /* LifeRingTests.m */; };
+		4C2C149A1A69F45F00123EDD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C2C14971A69F44B00123EDD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,18 +32,19 @@
 		4C2C146B1A69F3F800123EDD /* LifeRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2C146F1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2C14701A69F3F800123EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C2C14721A69F3F800123EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4C2C14731A69F3F800123EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C2C14751A69F3F800123EDD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		4C2C14761A69F3F800123EDD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		4C2C14781A69F3F800123EDD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		4C2C14791A69F3F800123EDD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4C2C14721A69F3F800123EDD /* LRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRAppDelegate.h; sourceTree = "<group>"; };
+		4C2C14731A69F3F800123EDD /* LRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRAppDelegate.m; sourceTree = "<group>"; };
+		4C2C14751A69F3F800123EDD /* LRFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRFirstViewController.h; sourceTree = "<group>"; };
+		4C2C14761A69F3F800123EDD /* LRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRFirstViewController.m; sourceTree = "<group>"; };
+		4C2C14781A69F3F800123EDD /* LRSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRSecondViewController.h; sourceTree = "<group>"; };
+		4C2C14791A69F3F800123EDD /* LRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRSecondViewController.m; sourceTree = "<group>"; };
 		4C2C147C1A69F3F800123EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C2C147E1A69F3F800123EDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C2C14811A69F3F800123EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4C2C14871A69F3F800123EDD /* LifeRingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeRingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2C148C1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2C148D1A69F3F800123EDD /* LifeRingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeRingTests.m; sourceTree = "<group>"; };
+		4C2C14971A69F44B00123EDD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2C149A1A69F45F00123EDD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +87,12 @@
 		4C2C146D1A69F3F800123EDD /* LifeRing */ = {
 			isa = PBXGroup;
 			children = (
-				4C2C14721A69F3F800123EDD /* AppDelegate.h */,
-				4C2C14731A69F3F800123EDD /* AppDelegate.m */,
-				4C2C14751A69F3F800123EDD /* FirstViewController.h */,
-				4C2C14761A69F3F800123EDD /* FirstViewController.m */,
-				4C2C14781A69F3F800123EDD /* SecondViewController.h */,
-				4C2C14791A69F3F800123EDD /* SecondViewController.m */,
+				4C2C14721A69F3F800123EDD /* LRAppDelegate.h */,
+				4C2C14731A69F3F800123EDD /* LRAppDelegate.m */,
+				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
+				4C2C14761A69F3F800123EDD /* LRFirstViewController.m */,
+				4C2C14781A69F3F800123EDD /* LRSecondViewController.h */,
+				4C2C14791A69F3F800123EDD /* LRSecondViewController.m */,
 				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
 				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
 				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
@@ -101,6 +104,7 @@
 		4C2C146E1A69F3F800123EDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C2C14991A69F45300123EDD /* Frameworks */,
 				4C2C146F1A69F3F800123EDD /* Info.plist */,
 				4C2C14701A69F3F800123EDD /* main.m */,
 			);
@@ -122,6 +126,14 @@
 				4C2C148C1A69F3F800123EDD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C2C14991A69F45300123EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C14971A69F44B00123EDD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +180,13 @@
 		4C2C14631A69F3F800123EDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LR;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = LifeBoat;
 				TargetAttributes = {
 					4C2C146A1A69F3F800123EDD = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = K3ZLWH83BT;
 					};
 					4C2C14861A69F3F800123EDD = {
 						CreatedOnToolsVersion = 6.2;
@@ -224,9 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2C147A1A69F3F800123EDD /* SecondViewController.m in Sources */,
-				4C2C14741A69F3F800123EDD /* AppDelegate.m in Sources */,
-				4C2C14771A69F3F800123EDD /* FirstViewController.m in Sources */,
+				4C2C147A1A69F3F800123EDD /* LRSecondViewController.m in Sources */,
+				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
+				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LifeRing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LifeRing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +436,7 @@
 				4C2C14931A69F3F800123EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2C14941A69F3F800123EDD /* Build configuration list for PBXNativeTarget "LifeRingTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				4C2C14961A69F3F800123EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
