@@ -7,11 +7,7 @@
 //
 
 @import UIKit;
-
+@import Parse;
 @interface LRAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
-
 @end
-
