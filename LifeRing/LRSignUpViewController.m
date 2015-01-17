@@ -18,7 +18,7 @@
     NSString *email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *password = self.passwordField.text;
     NSString *confirmPassword = self.confirmPasswordField.text;
-    int age = [self.ageField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].intValue;
+    NSNumber *age = [NSNumber numberWithInt:[self.ageField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].intValue];
 
     if ([email length] == 0 || [password length] == 0) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error" message:@"You must enter your email address & password" preferredStyle:UIAlertControllerStyleAlert];
@@ -26,7 +26,7 @@
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }else if(password != confirmPassword){
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password does not match" message:@"Please ensure that your passwords match." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password does not match" message:@"Please ensure that your passwords match" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
@@ -37,8 +37,8 @@
         newUser.email = email;
         newUser.password = password;
         newUser[@"firstName"] = firstName;
-        newUser[@"lastName"] = firstName;
- 
+        newUser[@"lastName"] = lastName;
+        newUser[@"age"] = age;
 
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if(error){
@@ -46,7 +46,7 @@
                     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
-            };
+            }
         }];
     }
 }
