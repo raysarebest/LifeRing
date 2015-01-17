@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 LifeBoat. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "LRSecondViewController.h"
 
-@interface SecondViewController ()
+@interface LRSecondViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation LRSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

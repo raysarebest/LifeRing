@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 LifeBoat. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "LRFirstViewController.h"
 
-@interface FirstViewController ()
+@interface LRFirstViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation LRFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

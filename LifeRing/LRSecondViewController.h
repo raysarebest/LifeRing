@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 LifeBoat. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface SecondViewController : UIViewController
+@interface LRSecondViewController : UIViewController
 
 
 @end

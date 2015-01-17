@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 LifeBoat. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "LRAppDelegate.h"
 
-@interface AppDelegate ()
+@interface LRAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation LRAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
