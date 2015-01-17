@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2C14711A69F3F800123EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14701A69F3F800123EDD /* main.m */; };
+		4C2C14741A69F3F800123EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* AppDelegate.m */; };
+		4C2C14771A69F3F800123EDD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* FirstViewController.m */; };
+		4C2C147A1A69F3F800123EDD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14791A69F3F800123EDD /* SecondViewController.m */; };
+		4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147B1A69F3F800123EDD /* Main.storyboard */; };
+		4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147E1A69F3F800123EDD /* Images.xcassets */; };
+		4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C14801A69F3F800123EDD /* LaunchScreen.xib */; };
+		4C2C148E1A69F3F800123EDD /* LifeRingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C148D1A69F3F800123EDD /* LifeRingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C2C14881A69F3F800123EDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C2C14631A69F3F800123EDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C2C146A1A69F3F800123EDD;
+			remoteInfo = LifeRing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C2C146B1A69F3F800123EDD /* LifeRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2C146F1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2C14701A69F3F800123EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C2C14721A69F3F800123EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C2C14731A69F3F800123EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C2C14751A69F3F800123EDD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		4C2C14761A69F3F800123EDD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4C2C14781A69F3F800123EDD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4C2C14791A69F3F800123EDD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4C2C147C1A69F3F800123EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C2C147E1A69F3F800123EDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C2C14811A69F3F800123EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4C2C14871A69F3F800123EDD /* LifeRingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeRingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C2C148C1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2C148D1A69F3F800123EDD /* LifeRingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeRingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C2C14681A69F3F800123EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2C14841A69F3F800123EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C2C14621A69F3F800123EDD = {
+			isa = PBXGroup;
+			children = (
+				4C2C146D1A69F3F800123EDD /* LifeRing */,
+				4C2C148A1A69F3F800123EDD /* LifeRingTests */,
+				4C2C146C1A69F3F800123EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C2C146C1A69F3F800123EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C146B1A69F3F800123EDD /* LifeRing.app */,
+				4C2C14871A69F3F800123EDD /* LifeRingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C2C146D1A69F3F800123EDD /* LifeRing */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C14721A69F3F800123EDD /* AppDelegate.h */,
+				4C2C14731A69F3F800123EDD /* AppDelegate.m */,
+				4C2C14751A69F3F800123EDD /* FirstViewController.h */,
+				4C2C14761A69F3F800123EDD /* FirstViewController.m */,
+				4C2C14781A69F3F800123EDD /* SecondViewController.h */,
+				4C2C14791A69F3F800123EDD /* SecondViewController.m */,
+				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
+				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
+				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
+				4C2C146E1A69F3F800123EDD /* Supporting Files */,
+			);
+			path = LifeRing;
+			sourceTree = "<group>";
+		};
+		4C2C146E1A69F3F800123EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C146F1A69F3F800123EDD /* Info.plist */,
+				4C2C14701A69F3F800123EDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C2C148A1A69F3F800123EDD /* LifeRingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C148D1A69F3F800123EDD /* LifeRingTests.m */,
+				4C2C148B1A69F3F800123EDD /* Supporting Files */,
+			);
+			path = LifeRingTests;
+			sourceTree = "<group>";
+		};
+		4C2C148B1A69F3F800123EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2C148C1A69F3F800123EDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C2C146A1A69F3F800123EDD /* LifeRing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C2C14911A69F3F800123EDD /* Build configuration list for PBXNativeTarget "LifeRing" */;
+			buildPhases = (
+				4C2C14671A69F3F800123EDD /* Sources */,
+				4C2C14681A69F3F800123EDD /* Frameworks */,
+				4C2C14691A69F3F800123EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeRing;
+			productName = LifeRing;
+			productReference = 4C2C146B1A69F3F800123EDD /* LifeRing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C2C14861A69F3F800123EDD /* LifeRingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C2C14941A69F3F800123EDD /* Build configuration list for PBXNativeTarget "LifeRingTests" */;
+			buildPhases = (
+				4C2C14831A69F3F800123EDD /* Sources */,
+				4C2C14841A69F3F800123EDD /* Frameworks */,
+				4C2C14851A69F3F800123EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C2C14891A69F3F800123EDD /* PBXTargetDependency */,
+			);
+			name = LifeRingTests;
+			productName = LifeRingTests;
+			productReference = 4C2C14871A69F3F800123EDD /* LifeRingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C2C14631A69F3F800123EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = LifeBoat;
+				TargetAttributes = {
+					4C2C146A1A69F3F800123EDD = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					4C2C14861A69F3F800123EDD = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 4C2C146A1A69F3F800123EDD;
+					};
+				};
+			};
+			buildConfigurationList = 4C2C14661A69F3F800123EDD /* Build configuration list for PBXProject "LifeRing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C2C14621A69F3F800123EDD;
+			productRefGroup = 4C2C146C1A69F3F800123EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C2C146A1A69F3F800123EDD /* LifeRing */,
+				4C2C14861A69F3F800123EDD /* LifeRingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C2C14691A69F3F800123EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */,
+				4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */,
+				4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2C14851A69F3F800123EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C2C14671A69F3F800123EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2C147A1A69F3F800123EDD /* SecondViewController.m in Sources */,
+				4C2C14741A69F3F800123EDD /* AppDelegate.m in Sources */,
+				4C2C14771A69F3F800123EDD /* FirstViewController.m in Sources */,
+				4C2C14711A69F3F800123EDD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2C14831A69F3F800123EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2C148E1A69F3F800123EDD /* LifeRingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C2C14891A69F3F800123EDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C2C146A1A69F3F800123EDD /* LifeRing */;
+			targetProxy = 4C2C14881A69F3F800123EDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C2C147B1A69F3F800123EDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C2C147C1A69F3F800123EDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C2C14801A69F3F800123EDD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C2C14811A69F3F800123EDD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C2C148F1A69F3F800123EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C2C14901A69F3F800123EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C2C14921A69F3F800123EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LifeRing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C2C14931A69F3F800123EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LifeRing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4C2C14951A69F3F800123EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LifeRingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
+			};
+			name = Debug;
+		};
+		4C2C14961A69F3F800123EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LifeRingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LifeRing.app/LifeRing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C2C14661A69F3F800123EDD /* Build configuration list for PBXProject "LifeRing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2C148F1A69F3F800123EDD /* Debug */,
+				4C2C14901A69F3F800123EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C2C14911A69F3F800123EDD /* Build configuration list for PBXNativeTarget "LifeRing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2C14921A69F3F800123EDD /* Debug */,
+				4C2C14931A69F3F800123EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C2C14941A69F3F800123EDD /* Build configuration list for PBXNativeTarget "LifeRingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C2C14951A69F3F800123EDD /* Debug */,
+				4C2C14961A69F3F800123EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C2C14631A69F3F800123EDD /* Project object */;
+}
