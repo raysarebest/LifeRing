@@ -51,6 +51,9 @@
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
             }
+            else{
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
         }];
     }
 }

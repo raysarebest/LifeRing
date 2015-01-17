@@ -20,8 +20,9 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    if(![PFUser currentUser])
-    [self.tabBarController performSegueWithIdentifier:@"login" sender:self];
+    if(![PFUser currentUser]){
+        [self.tabBarController performSegueWithIdentifier:@"login" sender:self];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
