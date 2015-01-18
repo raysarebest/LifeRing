@@ -185,6 +185,7 @@
 				4C2C14721A69F3F800123EDD /* LRAppDelegate.h */,
 				4C2C14731A69F3F800123EDD /* LRAppDelegate.m */,
 				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
+				D298AEAB1A6B48D9002DA56F /* connorscopy2.png */,
 				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
 				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
 				4C2C146E1A69F3F800123EDD /* Supporting Files */,
@@ -362,6 +363,7 @@
 			files = (
 				4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */,
 				4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */,
+				D298AEAC1A6B48D9002DA56F /* connorscopy2.png in Resources */,
 				4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,8 +39,8 @@
         }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
-    
     }
+    
     else{
         PFUser *newUser = [PFUser user];
         newUser.email = email;
@@ -60,8 +60,57 @@
                     }];
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
-            }
-            else{
+              } else if (error.code == 100){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Error, the connection to the server failed." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 124){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Connection timeout." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 200){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Please enter username" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 201){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Please enter password" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 1){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"internal server error" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 101){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"object not found" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 103){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"invalid class name" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 111){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"inncorrect type" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 119){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"forbidden op." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              }
+
+
+
+
+            }else{
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
         }];
