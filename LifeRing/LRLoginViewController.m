@@ -8,6 +8,7 @@
 
 #import "LRLoginViewController.h"
 #import "LRAnimations.h"
+#import "LRColorScheme.h"
 @import Parse;
 @interface LRLoginViewController()
 @property (strong, nonatomic) LRAnimations *animator;
@@ -25,14 +26,15 @@
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    //parse shit here//
     UIView *loading = [self.animator showLoadingViewInView:self.view];
+    //parse shit here//
     [PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
         [self.animator removeLoadingView:loading];
         if(error){
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error" message:@"An error occurred. Please try again." preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                 [alert removeFromParentViewController];
+<<<<<<< HEAD
             }];
             [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];
@@ -113,6 +115,8 @@
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                 [alert removeFromParentViewController];
 
+=======
+>>>>>>> 6e7ead9ecd0f589581f1e6f779a0a83ce53954e5
             }];
             [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];
@@ -123,6 +127,11 @@
     }];
 }
 
-
-
+#pragma mark - Property Lazy Instantiation
+-(LRAnimations *)animator{
+    if(!_animator){
+        _animator = [[LRAnimations alloc] init];
+    }
+    return _animator;
+}
 @end

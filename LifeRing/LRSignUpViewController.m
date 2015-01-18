@@ -52,6 +52,7 @@
         newUser[@"meds"] = [self userMedications];
         UIView *loading = [self.animator showLoadingViewInView:self.view];
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            [self.animator removeLoadingView:loading];
             if(error){
               if (error.code == 208){
                     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"This account is already linked to another user." preferredStyle:UIAlertControllerStyleAlert];
@@ -128,15 +129,19 @@
                   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"username already taken" preferredStyle:UIAlertControllerStyleAlert];
                   UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                       [alert removeFromParentViewController];
+                      
+                  }];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else{
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"This account is already linked to another user." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                      [alert removeFromParentViewController];
 
                   }];
                   [alert addAction:ok];
                   [self presentViewController:alert animated:YES completion:nil];
               }
-
-
-
-
             }else{
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
