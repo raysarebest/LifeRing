@@ -23,6 +23,9 @@
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
+    PFInstallation *install = [PFInstallation currentInstallation];
+    [install addUniqueObject:@"medical" forKey:@"channels"];
+    [install saveInBackground];
     return YES;
 }
 

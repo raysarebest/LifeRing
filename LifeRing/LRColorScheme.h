@@ -10,4 +10,15 @@
 
 @interface LRColorScheme : NSObject
 +(UIColor *)red;
++(UIColor *)epiPenComplement;
++(UIColor *)syringeComplement;
++(UIColor *)BInhalerComplement;
++(UIColor *)FInhalerComplement;
++(UIColor *)IPInhalerComplement;
++(UIColor *)ISInhalerComplement;
++(UIColor *)LInhalerComplement;
++(UIColor *)MInhalerComplement;
++(UIColor *)PInhalerComplement;
++(UIColor *)TEInhalerComplement;
++(UIColor *)TOInhalerComplement;
 @end

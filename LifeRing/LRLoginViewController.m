@@ -34,7 +34,6 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error" message:@"An error occurred. Please try again." preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                 [alert removeFromParentViewController];
-<<<<<<< HEAD
             }];
             [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];
@@ -114,9 +113,6 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"username already taken" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                 [alert removeFromParentViewController];
-
-=======
->>>>>>> 6e7ead9ecd0f589581f1e6f779a0a83ce53954e5
             }];
             [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];

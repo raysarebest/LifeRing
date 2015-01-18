@@ -11,7 +11,7 @@
 		4C17E9351A6B62EF005A1505 /* LRColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17E9341A6B62EF005A1505 /* LRColorScheme.m */; };
 		4C2C14711A69F3F800123EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14701A69F3F800123EDD /* main.m */; };
 		4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* LRAppDelegate.m */; };
-		4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* LRFirstViewController.m */; };
+		4C2C14771A69F3F800123EDD /* LREmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* LREmergencyViewController.m */; };
 		4C2C147A1A69F3F800123EDD /* LRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14791A69F3F800123EDD /* LRSecondViewController.m */; };
 		4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147B1A69F3F800123EDD /* Main.storyboard */; };
 		4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2C147E1A69F3F800123EDD /* Images.xcassets */; };
@@ -79,8 +79,8 @@
 		4C2C14701A69F3F800123EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C2C14721A69F3F800123EDD /* LRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRAppDelegate.h; sourceTree = "<group>"; };
 		4C2C14731A69F3F800123EDD /* LRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRAppDelegate.m; sourceTree = "<group>"; };
-		4C2C14751A69F3F800123EDD /* LRFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRFirstViewController.h; sourceTree = "<group>"; };
-		4C2C14761A69F3F800123EDD /* LRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRFirstViewController.m; sourceTree = "<group>"; };
+		4C2C14751A69F3F800123EDD /* LREmergencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LREmergencyViewController.h; sourceTree = "<group>"; };
+		4C2C14761A69F3F800123EDD /* LREmergencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LREmergencyViewController.m; sourceTree = "<group>"; };
 		4C2C14781A69F3F800123EDD /* LRSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRSecondViewController.h; sourceTree = "<group>"; };
 		4C2C14791A69F3F800123EDD /* LRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRSecondViewController.m; sourceTree = "<group>"; };
 		4C2C147C1A69F3F800123EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -268,8 +268,8 @@
 				4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */,
 				4C2C14C61A6A08C000123EDD /* LRLoginViewController.h */,
 				4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */,
-				4C2C14751A69F3F800123EDD /* LRFirstViewController.h */,
-				4C2C14761A69F3F800123EDD /* LRFirstViewController.m */,
+				4C2C14751A69F3F800123EDD /* LREmergencyViewController.h */,
+				4C2C14761A69F3F800123EDD /* LREmergencyViewController.m */,
 				4C2C14781A69F3F800123EDD /* LRSecondViewController.h */,
 				4C2C14791A69F3F800123EDD /* LRSecondViewController.m */,
 			);
@@ -396,7 +396,7 @@
 				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
 				4C459DF51A6B9BD900C90E29 /* LREmergencyViewCell.m in Sources */,
 				4C17E9321A6B5290005A1505 /* LRAnimations.m in Sources */,
-				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
+				4C2C14771A69F3F800123EDD /* LREmergencyViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
 				4C17E9351A6B62EF005A1505 /* LRColorScheme.m in Sources */,
 				4CBFAA091A6B028C003C2F65 /* LRLocationCoordinator.m in Sources */,

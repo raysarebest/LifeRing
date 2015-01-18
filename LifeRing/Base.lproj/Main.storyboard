@@ -10,8 +10,7 @@
         <!--Emergency-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <viewController id="9pv-A4-QxB" customClass="LRFirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="LREmergencyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -30,29 +29,29 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RWx-OO-Ce0" id="MgW-9D-4JQ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help! I need epinephireine!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk2-IH-Ibn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help! I need to be saved!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mk2-IH-Ibn">
                                                     <rect key="frame" x="8" y="144" width="584" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="mDW-0h-X1h"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-Vg-B3l">
-                                                    <rect key="frame" x="224" y="6" width="153" height="130"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epiPen" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-Vg-B3l">
+                                                    <rect key="frame" x="236" y="8" width="128" height="128"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Jth-Vg-B3l" secondAttribute="height" multiplier="153:130" id="BBs-Vu-K7z"/>
-                                                        <constraint firstAttribute="height" constant="130" id="mBO-2j-xDW"/>
+                                                        <constraint firstAttribute="width" secondItem="Jth-Vg-B3l" secondAttribute="height" multiplier="1:1" id="996-Uw-xcD"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Mk2-IH-Ibn" firstAttribute="leading" secondItem="MgW-9D-4JQ" secondAttribute="leadingMargin" id="48M-9y-nAe"/>
-                                                <constraint firstItem="Mk2-IH-Ibn" firstAttribute="centerX" secondItem="Jth-Vg-B3l" secondAttribute="centerX" constant="-0.5" id="6eE-y1-Crl"/>
+                                                <constraint firstItem="Jth-Vg-B3l" firstAttribute="top" secondItem="MgW-9D-4JQ" secondAttribute="topMargin" id="bmv-QF-EAU"/>
                                                 <constraint firstItem="Mk2-IH-Ibn" firstAttribute="trailing" secondItem="MgW-9D-4JQ" secondAttribute="trailingMargin" id="i33-Ee-4AH"/>
                                                 <constraint firstItem="Mk2-IH-Ibn" firstAttribute="top" secondItem="Jth-Vg-B3l" secondAttribute="bottom" constant="8" id="kRg-kn-GPX"/>
                                                 <constraint firstItem="Mk2-IH-Ibn" firstAttribute="bottom" secondItem="MgW-9D-4JQ" secondAttribute="bottomMargin" id="tox-ot-sBW"/>
+                                                <constraint firstItem="Mk2-IH-Ibn" firstAttribute="centerX" secondItem="Jth-Vg-B3l" secondAttribute="centerX" id="wMa-pF-Eni"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <gestureRecognizers/>
@@ -67,9 +66,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Emergency" id="aSY-Cp-hS9"/>
+                    <connections>
+                        <outlet property="buttonTable" destination="KYo-Ta-52U" id="Jc7-lT-0s5"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="-325"/>
+            <point key="canvasLocation" x="1546" y="-331"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -619,6 +622,7 @@
     </scenes>
     <resources>
         <image name="connorscopy2.png" width="418" height="394"/>
+        <image name="epiPen" width="410" height="411"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
