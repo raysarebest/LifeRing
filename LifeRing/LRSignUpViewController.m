@@ -71,6 +71,31 @@
                   UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
                   [alert addAction:ok];
                   [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 1){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"internal server error" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 101){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"object not found" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 103){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"invalid class name" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 111){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"inncorrect type" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 119){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"forbidden op." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
               }
 
 
