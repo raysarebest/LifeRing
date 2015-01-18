@@ -7,7 +7,7 @@
 //
 
 #import "LRAppDelegate.h"
-
+@import Parse;
 @interface LRAppDelegate ()
 
 @end

@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationUsageDescription</key>
+	<string>LifeRing needs your location to know where to send help, or to know that you&apos;re nearby an emergency to help</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>LifeRing needs your location to know where to send help, or to know that you&apos;re nearby an emergency to help</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

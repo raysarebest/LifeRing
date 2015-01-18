@@ -7,11 +7,13 @@
 //
 
 #import "LRSignUpViewController.h"
+#import "LRAnimations.h"
 @import Parse;
 @interface LRSignUpViewController()
 @property (strong, nonatomic) NSArray *miscDevices;
 @property (strong, nonatomic) NSArray *inhalers;
 @property (strong, nonatomic) NSMutableArray *checkedPaths;
+@property (strong, nonatomic) LRAnimations *animator;
 -(NSArray *)userMedications;
 @end
 @implementation LRSignUpViewController
@@ -22,15 +24,19 @@
     NSString *password = self.passwordField.text;
     NSString *confirmPassword = self.confirmPasswordField.text;
     NSNumber *age = [NSNumber numberWithInt:[self.ageField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].intValue];
-
+    
     if (email.length == 0 || password.length == 0) {
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Login Error" message:@"You must enter your email address & password" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [alert removeFromParentViewController];
+        }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }else if(![password isEqualToString:confirmPassword]){
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Password does not match" message:@"Please ensure that your passwords match" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [alert removeFromParentViewController];
+        }];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     
@@ -43,11 +49,15 @@
         newUser[@"firstName"] = firstName;
         newUser[@"lastName"] = lastName;
         newUser[@"age"] = age;
-
+        newUser[@"meds"] = [self userMedications];
+        UIView *loading = [self.animator showLoadingViewInView:self.view];
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if(error){
+            [self.animator removeLoadingView:loading];
+            if(error && !succeeded){
                     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry!" message:@"Error." preferredStyle:UIAlertControllerStyleAlert];
-                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                        [alert removeFromParentViewController];
+                    }];
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
             }
@@ -89,20 +99,21 @@
     NSArray *titles = @[@"Miscellaneous", @"Rescue Inhalers"];
     return titles[section];
 }
+#pragma mark - UITableViewDelegate Methods
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if(cell.accessoryType == UITableViewCellAccessoryCheckmark){
         cell.accessoryType = UITableViewCellAccessoryNone;
         [self.checkedPaths removeObject:indexPath];
+        NSLog(@"%@ removed", indexPath);
     }
     else{
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [self.checkedPaths addObject:indexPath];
+        NSLog(@"%@ added", indexPath);
     }
 }
-#pragma mark - UITableViewDelegate Methods
-
 #pragma mark - Property Lazy Instantiation
 -(NSArray *)miscDevices{
     if(!_miscDevices){
@@ -122,6 +133,12 @@
     }
     return _checkedPaths;
 }
+-(LRAnimations *)animator{
+    if(!_animator){
+        _animator = [[LRAnimations alloc] init];
+    }
+    return _animator;
+}
 #pragma mark - View Setup Code
 -(void)viewDidLoad{
     self.problemsTableView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.problemsTableView.contentSize.height);
@@ -132,7 +149,10 @@
 -(NSArray *)userMedications{
     NSMutableArray *meds = [NSMutableArray array];
     for(NSIndexPath *index in self.checkedPaths){
-        [meds addObject:[self.problemsTableView cellForRowAtIndexPath:index].textLabel.text];
+        NSLog(@"%@", index);
+        NSString *text = [self.problemsTableView cellForRowAtIndexPath:index].textLabel.text;
+        NSLog(@"%@", text);
+        [meds addObject:text];
     }
     return meds;
 }
