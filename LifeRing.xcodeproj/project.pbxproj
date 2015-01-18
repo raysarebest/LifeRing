@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C17E9321A6B5290005A1505 /* LRAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17E9311A6B5290005A1505 /* LRAnimations.m */; };
 		4C2C14711A69F3F800123EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14701A69F3F800123EDD /* main.m */; };
 		4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* LRAppDelegate.m */; };
 		4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* LRFirstViewController.m */; };
@@ -32,7 +33,7 @@
 		4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */; };
 		4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */; };
-		D298AEAC1A6B48D9002DA56F /* connorscopy2.png in Resources */ = {isa = PBXBuildFile; fileRef = D298AEAB1A6B48D9002DA56F /* connorscopy2.png */; };
+		4CBFAA091A6B028C003C2F65 /* LRLocationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFAA081A6B028C003C2F65 /* LRLocationCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C17E9301A6B5290005A1505 /* LRAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAnimations.h; sourceTree = "<group>"; };
+		4C17E9311A6B5290005A1505 /* LRAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAnimations.m; sourceTree = "<group>"; };
 		4C2C146B1A69F3F800123EDD /* LifeRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2C146F1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2C14701A69F3F800123EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,7 +106,8 @@
 		4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLoginViewController.m; sourceTree = "<group>"; };
 		4CBFAA041A6AAB4E003C2F65 /* LRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRSignUpViewController.h; sourceTree = "<group>"; };
 		4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSignUpViewController.m; sourceTree = "<group>"; };
-		D298AEAB1A6B48D9002DA56F /* connorscopy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connorscopy2.png; path = /Volumes/Lexar/connorscopy2.png; sourceTree = "<absolute>"; };
+		4CBFAA071A6B028C003C2F65 /* LRLocationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLocationCoordinator.h; sourceTree = "<group>"; };
+		4CBFAA081A6B028C003C2F65 /* LRLocationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLocationCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C17E92E1A6B5274005A1505 /* Helper Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4C17E92F1A6B527F005A1505 /* Animations */,
+				4CBFAA0A1A6B0297003C2F65 /* Location */,
+			);
+			name = "Helper Objects";
+			sourceTree = "<group>";
+		};
+		4C17E92F1A6B527F005A1505 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				4C17E9301A6B5290005A1505 /* LRAnimations.h */,
+				4C17E9311A6B5290005A1505 /* LRAnimations.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		4C2C14621A69F3F800123EDD = {
 			isa = PBXGroup;
 			children = (
@@ -158,11 +180,11 @@
 		4C2C146D1A69F3F800123EDD /* LifeRing */ = {
 			isa = PBXGroup;
 			children = (
+				4C17E92E1A6B5274005A1505 /* Helper Objects */,
 				4C2C14C51A6A089500123EDD /* View Controllers */,
 				4C2C14721A69F3F800123EDD /* LRAppDelegate.h */,
 				4C2C14731A69F3F800123EDD /* LRAppDelegate.m */,
 				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
-				D298AEAB1A6B48D9002DA56F /* connorscopy2.png */,
 				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
 				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
 				4C2C146E1A69F3F800123EDD /* Supporting Files */,
@@ -242,6 +264,15 @@
 				4C2C14791A69F3F800123EDD /* LRSecondViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4CBFAA0A1A6B0297003C2F65 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFAA071A6B028C003C2F65 /* LRLocationCoordinator.h */,
+				4CBFAA081A6B028C003C2F65 /* LRLocationCoordinator.m */,
+			);
+			name = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +362,6 @@
 			files = (
 				4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */,
 				4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */,
-				D298AEAC1A6B48D9002DA56F /* connorscopy2.png in Resources */,
 				4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,8 +384,10 @@
 				4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4C2C14C11A6A04F100123EDD /* TPKeyboardAvoidingScrollView.m in Sources */,
 				4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */,
+				4C17E9321A6B5290005A1505 /* LRAnimations.m in Sources */,
 				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
+				4CBFAA091A6B028C003C2F65 /* LRLocationCoordinator.m in Sources */,
 				4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */,
 				4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */,
 			);
