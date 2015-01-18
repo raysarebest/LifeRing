@@ -33,8 +33,8 @@
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
-    
     }
+    
     else{
         PFUser *newUser = [PFUser user];
         newUser.email = email;
@@ -46,12 +46,37 @@
 
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if(error){
-                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry!" message:@"Error." preferredStyle:UIAlertControllerStyleAlert];
+              if (error.code == 208){
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"This account is already linked to another user." preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
-            }
-            else{
+              } else if (error.code == 100){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Error, the connection to the server failed." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 124){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Connection timeout." preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 200){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Please enter username" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              } else if (error.code == 201){
+                  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"Please enter password" preferredStyle:UIAlertControllerStyleAlert];
+                  UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                  [alert addAction:ok];
+                  [self presentViewController:alert animated:YES completion:nil];
+              }
+
+
+
+
+            }else{
                 [self dismissViewControllerAnimated:YES completion:nil];
             }
         }];

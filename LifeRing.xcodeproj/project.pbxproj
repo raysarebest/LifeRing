@@ -32,6 +32,7 @@
 		4C2C14C41A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C31A6A04FC00123EDD /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */; };
 		4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */; };
+		D298AEAC1A6B48D9002DA56F /* connorscopy2.png in Resources */ = {isa = PBXBuildFile; fileRef = D298AEAB1A6B48D9002DA56F /* connorscopy2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		4C2C14C71A6A08C000123EDD /* LRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLoginViewController.m; sourceTree = "<group>"; };
 		4CBFAA041A6AAB4E003C2F65 /* LRSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRSignUpViewController.h; sourceTree = "<group>"; };
 		4CBFAA051A6AAB4E003C2F65 /* LRSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSignUpViewController.m; sourceTree = "<group>"; };
+		D298AEAB1A6B48D9002DA56F /* connorscopy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connorscopy2.png; path = /Volumes/Lexar/connorscopy2.png; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				4C2C14721A69F3F800123EDD /* LRAppDelegate.h */,
 				4C2C14731A69F3F800123EDD /* LRAppDelegate.m */,
 				4C2C147B1A69F3F800123EDD /* Main.storyboard */,
+				D298AEAB1A6B48D9002DA56F /* connorscopy2.png */,
 				4C2C147E1A69F3F800123EDD /* Images.xcassets */,
 				4C2C14801A69F3F800123EDD /* LaunchScreen.xib */,
 				4C2C146E1A69F3F800123EDD /* Supporting Files */,
@@ -328,6 +331,7 @@
 			files = (
 				4C2C147D1A69F3F800123EDD /* Main.storyboard in Resources */,
 				4C2C14821A69F3F800123EDD /* LaunchScreen.xib in Resources */,
+				D298AEAC1A6B48D9002DA56F /* connorscopy2.png in Resources */,
 				4C2C147F1A69F3F800123EDD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
