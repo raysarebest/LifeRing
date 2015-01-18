@@ -129,7 +129,7 @@
                   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"username already taken" preferredStyle:UIAlertControllerStyleAlert];
                   UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                       [alert removeFromParentViewController];
-
+                      
                   }];
                   [alert addAction:ok];
                   [self presentViewController:alert animated:YES completion:nil];
@@ -137,6 +137,7 @@
                   UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"This account is already linked to another user." preferredStyle:UIAlertControllerStyleAlert];
                   UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
                       [alert removeFromParentViewController];
+
                   }];
                   [alert addAction:ok];
                   [self presentViewController:alert animated:YES completion:nil];
