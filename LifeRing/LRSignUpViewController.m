@@ -52,12 +52,10 @@
         newUser[@"meds"] = [self userMedications];
         UIView *loading = [self.animator showLoadingViewInView:self.view];
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            [self.animator removeLoadingView:loading];
-            if(error && !succeeded){
-                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry!" message:@"Error." preferredStyle:UIAlertControllerStyleAlert];
-                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-                        [alert removeFromParentViewController];
-                    }];
+            if(error){
+              if (error.code == 208){
+                    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Whoops!" message:@"This account is already linked to another user." preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
                     [alert addAction:ok];
                     [self presentViewController:alert animated:YES completion:nil];
               } else if (error.code == 100){
