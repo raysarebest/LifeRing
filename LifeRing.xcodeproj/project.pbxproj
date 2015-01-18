@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C17E9321A6B5290005A1505 /* LRAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17E9311A6B5290005A1505 /* LRAnimations.m */; };
+		4C17E9351A6B62EF005A1505 /* LRColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C17E9341A6B62EF005A1505 /* LRColorScheme.m */; };
 		4C2C14711A69F3F800123EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14701A69F3F800123EDD /* main.m */; };
 		4C2C14741A69F3F800123EDD /* LRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14731A69F3F800123EDD /* LRAppDelegate.m */; };
 		4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2C14761A69F3F800123EDD /* LRFirstViewController.m */; };
@@ -70,6 +71,8 @@
 /* Begin PBXFileReference section */
 		4C17E9301A6B5290005A1505 /* LRAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAnimations.h; sourceTree = "<group>"; };
 		4C17E9311A6B5290005A1505 /* LRAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAnimations.m; sourceTree = "<group>"; };
+		4C17E9331A6B62EF005A1505 /* LRColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRColorScheme.h; sourceTree = "<group>"; };
+		4C17E9341A6B62EF005A1505 /* LRColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRColorScheme.m; sourceTree = "<group>"; };
 		4C2C146B1A69F3F800123EDD /* LifeRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2C146F1A69F3F800123EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2C14701A69F3F800123EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,19 +147,21 @@
 		4C17E92E1A6B5274005A1505 /* Helper Objects */ = {
 			isa = PBXGroup;
 			children = (
-				4C17E92F1A6B527F005A1505 /* Animations */,
+				4C17E92F1A6B527F005A1505 /* User Interface */,
 				4CBFAA0A1A6B0297003C2F65 /* Location */,
 			);
 			name = "Helper Objects";
 			sourceTree = "<group>";
 		};
-		4C17E92F1A6B527F005A1505 /* Animations */ = {
+		4C17E92F1A6B527F005A1505 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
 				4C17E9301A6B5290005A1505 /* LRAnimations.h */,
 				4C17E9311A6B5290005A1505 /* LRAnimations.m */,
+				4C17E9331A6B62EF005A1505 /* LRColorScheme.h */,
+				4C17E9341A6B62EF005A1505 /* LRColorScheme.m */,
 			);
-			name = Animations;
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		4C2C14621A69F3F800123EDD = {
@@ -387,6 +392,7 @@
 				4C17E9321A6B5290005A1505 /* LRAnimations.m in Sources */,
 				4C2C14771A69F3F800123EDD /* LRFirstViewController.m in Sources */,
 				4C2C14711A69F3F800123EDD /* main.m in Sources */,
+				4C17E9351A6B62EF005A1505 /* LRColorScheme.m in Sources */,
 				4CBFAA091A6B028C003C2F65 /* LRLocationCoordinator.m in Sources */,
 				4CBFAA061A6AAB4E003C2F65 /* LRSignUpViewController.m in Sources */,
 				4C2C14C81A6A08C000123EDD /* LRLoginViewController.m in Sources */,

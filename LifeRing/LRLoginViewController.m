@@ -8,6 +8,7 @@
 
 #import "LRLoginViewController.h"
 #import "LRAnimations.h"
+#import "LRColorScheme.h"
 @import Parse;
 @interface LRLoginViewController()
 @property (strong, nonatomic) LRAnimations *animator;
@@ -25,8 +26,8 @@
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    //parse shit here//
     UIView *loading = [self.animator showLoadingViewInView:self.view];
+    //parse shit here//
     [PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
         [self.animator removeLoadingView:loading];
         if(error){
@@ -43,6 +44,16 @@
     }];
 }
 
-  
-  
+#pragma mark - Property Lazy Instantiation
+-(LRAnimations *)animator{
+    if(!_animator){
+        _animator = [[LRAnimations alloc] init];
+    }
+    return _animator;
+}
+#pragma mark - View Setup Code
+-(void)viewDidLoad{
+//    self.navigationController.navigationBar.tintColor = [LRColorScheme red];
+//    self.navigationController.navigationBar.backgroundColor = [LRColorScheme red];
+}
 @end

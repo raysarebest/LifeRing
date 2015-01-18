@@ -12,7 +12,7 @@
 @end
 @implementation LRAnimations
 -(UIView *)showLoadingViewInView:(UIView *)superView{
-    UIView *loading = [[UIView alloc] initWithFrame:superView.frame];
+    UIView *loading = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     loading.backgroundColor = [UIColor blackColor];
     loading.alpha = .5;
     UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 15, 15)];
