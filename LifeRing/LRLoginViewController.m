@@ -51,4 +51,12 @@
     }
     return _animator;
 }
+#pragma mark - View Setup Code
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 @end

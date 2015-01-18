@@ -42,6 +42,8 @@
     }
     
     else{
+        [self.emailField resignFirstResponder];
+        [self.passwordField resignFirstResponder];
         PFUser *newUser = [PFUser user];
         newUser.email = email;
         newUser.username = email;
@@ -222,9 +224,14 @@
 }
 #pragma mark - View Setup Code
 -(void)viewDidLoad{
+    [super viewDidLoad];
     self.problemsTableView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.problemsTableView.contentSize.height);
     self.problemsTableView.dataSource = self;
     self.problemsTableView.delegate = self;
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 #pragma mark - Private Helper Methods
 -(NSArray *)userMedications{
